@@ -1,0 +1,13 @@
+flat_ntuples
+original_pages
+other
+text_based_info
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.pyc
