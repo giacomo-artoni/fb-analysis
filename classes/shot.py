@@ -18,12 +18,15 @@ class shot:
     self.OutcomeId = Outcomes[ self.Outcome ]
     self.Type = None
     self.TypeId = None
-    Types = { 'Head': 0, 'LeftFoot': 1, 'RightFoot': 2 }
+    Types = { 'Head': 0, 'LeftFoot': 1, 'RightFoot': 2, 'OtherBodyPart': 3 }
     for qual in event[ 'qualifiers' ]:
       name = qual[ 'type' ][ 'displayName' ]
       if name in Types:
         self.Type = name
         self.TypeId = Types[ name ]
+      #print ' --- ', name
+    #print 'Outcome: ', self.OutcomeId
+    #print 'Type: ', self.TypeId
 
   def __str__ ( self ):
     return ' ------------------\n\n Id: %d \n Minute: %d \n Player: %s (%d)\n Team: %s (%d)\n X: %f \n Y: %f \n Outcome: %s \n Type: %s\n' % ( self.Id, self.Minute, self.Player, self.PlayerId, self.Team, self.TeamId, self.X, self.Y, self.Outcome, self.TypeName )
