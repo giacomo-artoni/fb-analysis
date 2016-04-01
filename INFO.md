@@ -6,53 +6,25 @@
   - ```Types = { 'Head': 0, 'LeftFoot': 1, 'RightFoot': 2, 'OtherBodyPart': 3 }```
   - ```Outcomes = { 'Goal': 0, 'MissedShots': 1, 'SavedShot': 2, 'ShotOnPost': 3 }```
 
-- Championships
-  - Serie A
-    - 2015/2016: ```/Regions/108/Tournaments/5/Seasons/5970```
-    - 2014/2015: ```/Regions/108/Tournaments/5/Seasons/5441```
-    - 2013/2014: ```/Regions/108/Tournaments/5/Seasons/3978```
-    - 2012/2013: ```/Regions/108/Tournaments/5/Seasons/3512```
-    - 2011/2012: ```/Regions/108/Tournaments/5/Seasons/3054```
-    - 2010/2011: ```/Regions/108/Tournaments/5/Seasons/2626```
-  - Premier League
-    - 2015/2016: ```/Regions/252/Tournaments/2/Seasons/5826```
-    - 2014/2015: ```/Regions/252/Tournaments/2/Seasons/4311```
-    - 2013/2014: ```/Regions/252/Tournaments/2/Seasons/3853```
-    - 2012/2013: ```/Regions/252/Tournaments/2/Seasons/3389```
-    - 2011/2012: ```/Regions/252/Tournaments/2/Seasons/2935```
-    - 2010/2011: ```/Regions/252/Tournaments/2/Seasons/2458```
-  - La Liga 
-    - 2015/2016: ```/Regions/206/Tournaments/4/Seasons/5933```
-    - 2014/2015: ```/Regions/206/Tournaments/4/Seasons/5435```
-    - 2013/2014: ```/Regions/206/Tournaments/4/Seasons/3922```
-    - 2012/2013: ```/Regions/206/Tournaments/4/Seasons/3470```
-    - 2011/2012: ```/Regions/206/Tournaments/4/Seasons/3004```
-    - 2010/2011: ```/Regions/206/Tournaments/4/Seasons/2596```
-  - Bundesliga 
-    - 2015/2016: ```/Regions/81/Tournaments/3/Seasons/5870```
-    - 2014/2015: ```/Regions/81/Tournaments/3/Seasons/4336```
-    - 2013/2014: ```/Regions/81/Tournaments/3/Seasons/3863```
-    - 2012/2013: ```/Regions/81/Tournaments/3/Seasons/3424```
-    - 2011/2012: ```/Regions/81/Tournaments/3/Seasons/2949```
-    - 2010/2011: ```/Regions/81/Tournaments/3/Seasons/2520```
-  - Ligue 1
-    - 2015/2016: ```/Regions/74/Tournaments/22/Seasons/5830```
-    - 2014/2015: ```/Regions/74/Tournaments/22/Seasons/4279```
-    - 2013/2014: ```/Regions/74/Tournaments/22/Seasons/3836```
-    - 2012/2013: ```/Regions/74/Tournaments/22/Seasons/3356```
-    - 2011/2012: ```/Regions/74/Tournaments/22/Seasons/2920```
-    - 2010/2011: ```/Regions/74/Tournaments/22/Seasons/2417```
-  - Uefa Champions League 
-    - 2015/2016: ```/Regions/250/Tournaments/12/Seasons/5848```
-    - 2014/2015: ```/Regions/250/Tournaments/12/Seasons/4333```
-    - 2013/2014: ```/Regions/250/Tournaments/12/Seasons/3872```
-    - 2012/2013: ```/Regions/250/Tournaments/12/Seasons/3416```
-    - 2011/2012: ```/Regions/250/Tournaments/12/Seasons/2944```
-    - 2010/2011: ```/Regions/250/Tournaments/12/Seasons/2474```
-  - Uefa Europa League 
-    - 2015/2016: ```/Regions/250/Tournaments/30/Seasons/5849```
-    - 2014/2015: ```/Regions/250/Tournaments/30/Seasons/4332```
-    - 2013/2014: ```/Regions/250/Tournaments/30/Seasons/3871```
-    - 2012/2013: ```/Regions/250/Tournaments/30/Seasons/3418```
-    - 2011/2012: ```/Regions/250/Tournaments/30/Seasons/2945```
-    - 2010/2011: ```/Regions/250/Tournaments/30/Seasons/2469```
+- Championships (```/Regions/xxx/Tournaments/yyy/Seasons/zzz```)
+  - Italy, Serie A 
+    - ```RegTour = ( 108, 5 )``` 
+    - ```Seasons = { 2010: 2626, 2011: 3054, 2012: 3512, 2013: 3978, 2014: 5441, 2015: 5970 }``` 
+  - England, Premier League
+    - ```RegTour = ( 252, 2 )``` 
+    - ```Seasons = { 2010: 2458, 2011: 2935, 2012: 3389, 2013: 3853, 2014: 4311, 2015: 5826 }```
+  - Spain, La Liga
+    - ```RegTour = ( 206, 4 )``` 
+    - ```Seasons = { 2010: 2596, 2011: 3004, 2012: 3470, 2013: 3922, 2014: 5435, 2015: 5933 }```
+  - Germany, Bundesliga
+    - ```RegTour = ( 81, 3 )``` 
+    - ```Seasons = { 2010: 2520, 2011: 2949, 2012: 3424, 2013: 3863, 2014: 4336, 2015: 5870 }```
+  - France, Ligue 1
+    - ```RegTour = ( 74, 22 )``` 
+    - ```Seasons = { 2010: 2417, 2011: 2920, 2012: 3356, 2013: 3836, 2014: 4279, 2015: 5830 }```
+  - Europe, Uefa Champions League
+    - ```RegTour = ( 250, 12 )``` 
+    - ```Seasons = { 2010: 2474, 2011: 2944, 2012: 3416, 2013: 3872, 2014: 4333, 2015: 5848 }```
+  - Europe, Uefa Europa League
+    - ```RegTour = ( 250, 30 )``` 
+    - ```Seasons = { 2010: 2469, 2011: 2945, 2012: 3418, 2013: 3871, 2014: 4332, 2015: 5849 }```
