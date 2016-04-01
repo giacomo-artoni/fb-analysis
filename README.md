@@ -1,4 +1,4 @@
-# Make sure you have the following directories (ignored by git)  
+## Make sure you have the following directories (ignored by git)  
 * flat_ntuples/
 * original_pages/
 * other/
