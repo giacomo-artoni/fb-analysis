@@ -3,8 +3,8 @@
 #### Definition of Ids
 
 - Shots
-```Types = { 'Head': 0, 'LeftFoot': 1, 'RightFoot': 2, 'OtherBodyPart': 3 }```
-```Outcomes = { 'Goal': 0, 'MissedShots': 1, 'SavedShot': 2, 'ShotOnPost': 3 }```
+  - ```Types = { 'Head': 0, 'LeftFoot': 1, 'RightFoot': 2, 'OtherBodyPart': 3 }```
+  - ```Outcomes = { 'Goal': 0, 'MissedShots': 1, 'SavedShot': 2, 'ShotOnPost': 3 }```
 
 - Championships
   - Serie A
