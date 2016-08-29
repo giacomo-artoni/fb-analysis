@@ -3,7 +3,10 @@ import team
 
 class match:
 
-  def __init__ ( self, the_id, info ):
+  def __init__ ( self, the_id, prel_info, info ):
+    self.Region = prel_info[ 0 ]
+    self.Tournament = prel_info[ 1 ]
+    self.Season = prel_info[ 2 ]
     self.Id = the_id 
     self.LastMinute = info[ 'maxMinute' ]
     self.HomeTeam = team.team( info[ 'home' ] )

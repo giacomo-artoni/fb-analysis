@@ -10,8 +10,8 @@ def main():
   parser.add_option( '-i', '--input', dest = 'input_file', action = 'store', type = 'string', default = '', help = '' )
   ( options, args ) = parser.parse_args()
   #==#==#==#==#
-  the_dict, matchId = utils.get_info( options.input_file )
-  if not the_dict or not matchId:
+  the_dict, matchId, matchInfo = utils.get_info( options.input_file )
+  if not the_dict or not matchId or not matchInfo:
     return 
   #==#==#==#==#
   out_file = ROOT.TFile( 'flat_ntuples/shots_%s.root' % matchId, 'recreate' )
@@ -20,7 +20,7 @@ def main():
   teams = {}
   shot_file = open( 'text_based_info/shots_%s.list' % matchId, 'w' )
   last_shot = None
-  the_match = match( matchId, the_dict )
+  the_match = match( matchId, matchInfo, the_dict )
   utils.add_teams( teams, the_match )
   for key in the_dict[ 'playerIdNameDictionary' ]:
     players[ int( key ) ] = the_dict[ 'playerIdNameDictionary' ][ key ]    
@@ -28,7 +28,7 @@ def main():
   events = the_dict[ 'events' ]
   for index, event in enumerate( events ):
     if 'isShot' in event:
-      last_shot = shot( matchId, event, players, teams )
+      last_shot = shot( the_match, event, players, teams )
       shot_file.write( last_shot.get_content() )
 
   shot_file.close()
